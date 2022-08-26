@@ -18,33 +18,33 @@ print("Searching for " + single_character + " in " + five_character_word)
 
 matching_characters = 0
 
-INDEX0: str = five_character_word[0]
+FIRSTCHARACTER: str = five_character_word[0]
 
-if single_character == INDEX0:
+if single_character == FIRSTCHARACTER:
     print(single_character + " found at index 0")
     matching_characters = matching_characters + 1
 
-INDEX1: str = five_character_word[1]
+SECONDCHARACTER: str = five_character_word[1]
 
-if single_character == INDEX1:
+if single_character == SECONDCHARACTER:
     print(single_character + " found at index 1")
     matching_characters = matching_characters + 1
 
-INDEX2: str = five_character_word[2]
+THIRDCHARACTER: str = five_character_word[2]
 
-if single_character == INDEX2:
+if single_character == THIRDCHARACTER:
     print(single_character + " found at index 2")
     matching_characters = matching_characters + 1
 
-INDEX3: str = five_character_word[3]
+FOURTHCHARACTER: str = five_character_word[3]
 
-if single_character == INDEX3:
+if single_character == FOURTHCHARACTER:
     print(single_character + " found at index 3")
     matching_characters = matching_characters + 1
    
-INDEX4: str = five_character_word[4]
+FIFTHCHARACTER: str = five_character_word[4]
 
-if single_character == INDEX4:
+if single_character == FIFTHCHARACTER:
     print(single_character + " found at index 4")
     matching_characters = matching_characters + 1
     
