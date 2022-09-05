@@ -18,14 +18,14 @@ YELLOW_BOX: str = "\U0001F7E8"
 while len(user_guess) != len(secret_word):
     user_guess = input(f"That was not {letters} letters! Try again: ")
         
-current_letter: int = 0
-result: str = ""
 
 # checks each letter in the guessed word for matching letters in the secret word
 # if the letter is the same at the same index on each word a green box is added, if not, a while loop checks if the current letter
 # being checked in the user's guess is at another index in the secret word, if this is true, a yellow box is added and if not
 # a white box is added. The next letter is then checked for a match as the loop resets
 
+current_letter: int = 0
+result: str = ""
 while current_letter < len(secret_word):
     if secret_word[current_letter] == user_guess[current_letter]:
         result = result + GREEN_BOX 
@@ -45,7 +45,7 @@ while current_letter < len(secret_word):
 
 print(result)
 
-#the player wins if they guess the word right and lose if they're wrong
+# the player wins if they guess the word right and lose if they're wrong
 
 if user_guess != secret_word:
     print("Not quite. Play again soon!")
