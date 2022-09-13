@@ -48,7 +48,7 @@ def input_guess(expected_length: int) -> str:
     """Returns the user's guess provided it is the correct length according to the secret word."""
     user_guess: str = input(f"Enter a {expected_length} character word: ")
     while len(user_guess) != expected_length:
-        user_guess = input(f"That was not {expected_length} chars! Try again: ")
+        user_guess = input(f"That wasn't {expected_length} chars! Try again: ")
     return user_guess
 
 
