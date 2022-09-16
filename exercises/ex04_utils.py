@@ -2,23 +2,26 @@
 
 __author__ = "730557892"
 
+
 def all(numbers: list[int], single_number: int) -> bool:
     """Returns a bool that determines whether all the ints in a list are the same as a given int."""
-    all_same: bool == False
+    if len(numbers) == 0:
+        return False
     i: int = 0
+    all_same: bool = False
     while i < len(numbers):
         if single_number == numbers[i]:
             all_same = True
         else: 
-            all_same = False
+            return False
         i += 1
     return all_same
 
 
 def max(numbers: list[int]) -> int:
-    """Returns the largest number in a list of ints"""
+    """Returns the largest number in a list of ints."""
     if len(numbers) == 0:
-        raise ValueError("max() arg is an empty list")
+        raise ValueError("max() arg is an empty List")
     i: int = 1
     highest_number: int = numbers[0]
     while i < len(numbers):
@@ -33,13 +36,12 @@ def is_equal(list_1: list[int], list_2: list[int]) -> bool:
     """Given two lists of ints, return True if each index is exactly the same."""
     i: int = 0
     not_equal: bool = False
+    if len(list_1) == 0 and len(list_2) == 0:
+        return True
     while i < len(list_1) and i < len(list_2):
-        if list_1[i] != list_2[i]:
+        if list_1[i] != list_2[i] or len(list_1) != len(list_2):
             return False 
         else:
             not_equal = True 
             i += 1
     return not_equal
-                
-        
-
